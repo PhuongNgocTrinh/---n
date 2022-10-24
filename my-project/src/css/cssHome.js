@@ -10,6 +10,9 @@ export const Img = styled.img`
     bottom: -40%;
     right: 10%;
   }
+  &.caretory-img {
+    border-radius: 20px;
+  }
 `;
 export const ImgBlog = styled.img`
   width: 100%;
@@ -84,14 +87,17 @@ export const BodyItem = styled.div`
   div p {
     color: #fff;
   }
-  div p {
-    margin-bottom: 40px;
+  &.container .slick-slider .slick-list .slick-track .slick-cloned div {
+    margin-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
   }
 `;
 export const ItemsPadding = styled.div`
   padding: 10px;
   height: 270px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   overflow: hidden;
   object-fit: cover;
   p {
@@ -109,7 +115,7 @@ export const ImgHoverItem = styled.img`
   }
 `;
 
-export const heightItem = styled.div`
+export const HeightItem = styled.div`
   height: 270px;
 `;
 //vvideo
