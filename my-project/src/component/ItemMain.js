@@ -56,9 +56,9 @@ const ItemMain = (props) => {
         <h5>New releases</h5>
         <p>Great PS5 and PS4 games available now</p>
         <Slider className="slider" {...settings}>
-          {products.items.map((items) => {
+          {products.items.map((items, index) => {
             return (
-              <Link to="infoGame">
+              <Link key={index} to="infoGame">
                 <ItemsPadding>
                   <ImgHoverItem src={items.imgItem} />
                   <p>{items.name}</p>

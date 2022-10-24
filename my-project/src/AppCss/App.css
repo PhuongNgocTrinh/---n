@@ -2,7 +2,8 @@
   text-align: center;
   margin-top: 50px;
 }
-
+* {
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,6 +38,7 @@
     transform: rotate(360deg);
   }
 }
+
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -85,20 +87,21 @@
 .slick-next:before {
   font-size: 30px !important;
 }
-.blog-body div div .slick-prev:before,
-.blog-body div div .slick-next:before {
-  color: #1c1616;
+.container div .slick-slider .slick-prev:before,
+.container div .slick-slider .slick-next:before {
+  color: #5f4b4b;
 }
-.blog-body div div .slick-prev {
-  left: 0 !important;
+.container div .slick-slider .slick-prev {
+  left: 14px !important;
   top: 46% !important;
   z-index: 100;
 }
-.blog-body div div .slick-next {
+.container div .slick-slider .slick-next {
   top: 46% !important;
-  right: 0 !important;
+  right: 14px !important;
 }
-.blog-body div div .slick-slide {
+.blog-main .slick-initialized .slick-list .slick-track .slick-slide {
+  padding: 0 10px;
 }
 .blog-body div h2 {
   margin-top: 20px;
@@ -153,4 +156,7 @@
 }
 .main-animation div div {
   /* width: 100%; */
+}
+.container .slick-slider .slick-list .slick-track .slick-cloned div {
+  margin-bottom: 20px;
 }

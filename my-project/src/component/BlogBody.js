@@ -6,7 +6,6 @@ import { ImgBlog } from "../css/cssHome";
 
 const BlogBody = (props) => {
   const { products } = props;
-  console.log(products);
   const settings = {
     dots: false,
     infinite: true,
@@ -15,17 +14,19 @@ const BlogBody = (props) => {
     slidesToScroll: 3,
   };
   return (
-    <div className="">
+    <div className="blog-main">
       <h2> Blogs </h2>
-      <Slider className="" {...settings}>
-        {products.itemBlog.map((item, key) => {
-          return (
-            <div key={key} className="blog-items">
-              <ImgBlog src={item.imgItem} />
-              <p>{item.name}</p>
-            </div>
-          );
-        })}
+      <Slider className="a" {...settings}>
+        {products &&
+          products.items.map((item, key) => {
+            console.log(item);
+            return (
+              <div key={key} className="blog-items">
+                <ImgBlog src={item.imgItem} />
+                <p>{item.name}</p>
+              </div>
+            );
+          })}
       </Slider>
     </div>
   );

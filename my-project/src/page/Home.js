@@ -5,7 +5,7 @@ import {
   Prv,
   TitleBanerDow,
   Extraordina,
-  heightItem,
+  HeightItem,
 } from "../css/cssHome";
 import { DflexAll } from "../css/cssComponent";
 import { Link } from "react-router-dom";
@@ -16,11 +16,10 @@ import ItemMain from "../component/ItemMain";
 import BanerCarousel from "../component/BanerCarousel";
 import FullWidthTabs from "../component/TabPanel";
 import BlogBody from "../component/BlogBody";
-import BasicTabs from "../component/TabPanel";
+import TabPanel from "../component/TabPanel";
 const Home = () => {
   const { products } = useSelector((state) => state.products);
 
-  console.log(products);
   if (products === 0) return <h1>undefined</h1>;
   return (
     <div>
@@ -48,13 +47,16 @@ const Home = () => {
           </TitleBanerDow>
         </DisplayFlex>
       </div>
-      <heightItem>
+      <div className="abc">
         <ItemMain products={products} />
-      </heightItem>
-      <div className=" blog-body">
+      </div>
+      <div className="container">
         <BlogBody products={products} />
       </div>
-      <Link to="listItem">see all</Link>
+      {/* <Link to="listItem">see all</Link> */}
+      <div className="container">
+        <TabPanel />
+      </div>
     </div>
   );
 };

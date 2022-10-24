@@ -1,296 +1,292 @@
 {
-  "status": true,
-  "itemBlog": [
-    {
-      "_id": 1,
-      "name": "Kena: Bridge of Spirits",
-      "imgItem": "./images/kena.png",
-      "year": 2022
-    },
-    {
-      "_id": 2,
-      "name": "Marvel's Avengers",
-      "imgItem": "./images/marval.png",
-      "year": 2022
-    },
-    {
-      "_id": 3,
-      "name": "NBA 2K22",
-      "imgItem": "./images/nba.png",
-      "year": 2022
-    },
-    {
-      "_id": 4,
-      "name": "FINAL FANTASY VII REMAKE INTERGRADE",
-      "imgItem": "./images/final.png",
-      "year": 2022
-    },
-    {
-      "_id": 5,
-      "name": "Crash Bandicoot™ 4: It’s About Time",
-      "imgItem": "./images/crash.png",
-      "year": 2022
-    },
-    {
-      "_id": 6,
-      "name": "HITMAN 3",
-      "imgItem": "./images/hitman.png",
-      "year": 2022
-    },
-    {
-      "_id": 7,
-      "name": "Life is Strange: True Colors",
-      "imgItem": "./images/life.png",
-      "year": 2022
-    },
-    {
-      "_id": 8,
-      "name": "Tony Hawk's™ Pro Skater™ 1 + 2",
-      "imgItem": "./images/tony.png",
-      "year": 2022
-    }
+  "category": [
+    "action",
+    "Role-Playing",
+    "Strategy",
+    "Adventure",
+    "Simulation",
+    "Sports-Racing"
   ],
-  "itemsChild": [
-    {
-      "_id": 1,
-      "name": "Suicide Squad: Kill the Justice League",
-      "imgItem": "./images/suicide.png",
-      "year": 2022
-    },
-    {
-      "_id": 2,
-      "name": "Resident Evil Village",
-      "imgItem": "./images/resident.png",
-      "year": 2022
-    },
-    {
-      "_id": 3,
-      "name": "Apex Legends™ PS5™ ",
-      "imgItem": "./images/apex.png",
-      "year": 2022
-    },
-    {
-      "_id": 4,
-      "name": "F1® Manager 2022",
-      "imgItem": "./images/manager.png",
-      "year": 2022
-    },
-    {
-      "_id": 5,
-      "name": "Grand Theft Auto V",
-      "imgItem": "./images/grand.png",
-      "year": 2022
-    },
-    {
-      "_id": 6,
-      "name": "Soul Hackers 2",
-      "imgItem": "./images/soul.png",
-      "year": 2022
-    },
-    {
-      "_id": 7,
-      "name": "Genshin Impact",
-      "imgItem": "./images/genshin.png",
-      "year": 2022
-    },
-    {
-      "_id": 8,
-      "name": "Two Point Campus PS4 & PS5",
-      "imgItem": "./images/twopoint.png",
-      "year": 2022
-    },
-    {
-      "_id": 9,
-      "name": "Tiny Tina's Wonderlands",
-      "imgItem": "./images/tinytitna.png",
-      "year": 2022
-    },
-    {
-      "_id": 10,
-      "name": "Cyberpunk 2077",
-      "imgItem": "./images/cyber.png",
-      "year": 2022
-    },
-    {
-      "_id": 11,
-      "name": "Ghostwire: Tokyo",
-      "imgItem": "./images/ghostwire.png",
-      "year": 2022
-    },
-    {
-      "_id": 12,
-      "name": "Inscryption",
-      "imgItem": "./images/inscry.png",
-      "year": 2022
-    },
-    {
-      "_id": 13,
-      "name": "Far Cry 6",
-      "imgItem": "./images/farcry.png",
-      "year": 2022
-    },
-    {
-      "_id": 14,
-      "name": "OlliOlli World",
-      "imgItem": "./images/oli.png",
-      "year": 2022
-    },
-    {
-      "_id": 15,
-      "name": "Tom Clancy's Rainbow Six Siege",
-      "imgItem": "./images/tom.png",
-      "year": 2022
-    },
-    {
-      "_id": 16,
-      "name": "Sifu",
-      "imgItem": "./images/sifu.png",
-      "year": 2022
-    },
-    {
-      "_id": 17,
-      "name": "Tom Clancy's Rainbow Six Siege",
-      "imgItem": "./images/tom.png",
-      "year": 2022
-    },
-    {
-      "_id": 18,
-      "name": "Destiny 2",
-      "imgItem": "./images/destiny.png",
-      "year": 2022
-    },
-    {
-      "_id": 19,
-      "name": "Among Us",
-      "imgItem": "./images/among.png",
-      "year": 2022
-    },
-    {
-      "_id": 20,
-      "name": "Trek to Yomi",
-      "imgItem": "./images/trek.png",
-      "year": 2022
-    }
-  ],
+
   "items": [
     {
+      "category": "action",
       "_id": 1,
       "name": "ending ring",
       "imgItem": "./images/endingring.png",
       "year": 2018
     },
     {
+      "category": "Role-Playing",
       "_id": 2,
       "name": "horizon",
       "imgItem": "./images/horizon.png",
       "year": 2022
     },
     {
+      "category": "action",
       "_id": 3,
       "name": "Stray",
       "imgItem": "./images/stray.png",
       "year": 2022
     },
     {
+      "category": "Role-Playing",
       "_id": 4,
       "name": "Madden NFL 23",
       "imgItem": "./images/madden.png",
       "year": 2015
     },
     {
+      "category": "action",
       "_id": 5,
       "name": "UNCHARTED™: Legacy of Thieves Collection",
       "imgItem": "./images/uncharted.png",
       "year": 2016
     },
     {
+      "category": "Role-Playing",
       "_id": 6,
       "name": "The Last of Us™ Part I",
       "imgItem": "./images/thelastofus.png",
       "year": 2015
     },
     {
+      "category": "action",
       "_id": 7,
       "name": "Dying Light 2 Stay Human",
       "imgItem": "./images/dying.png",
       "year": 2016
     },
     {
+      "category": "Role-Playing",
       "_id": 8,
       "name": "LEGO® Star Wars: The Skywalker Saga",
       "imgItem": "./images/legostarwars.png",
       "year": 2011
     },
     {
+      "category": "action",
       "_id": 9,
       "name": "Ghostwire: Tokyo",
       "imgItem": "./images/ghostwire.png",
       "year": 2016
     },
     {
+      "category": "Role-Playing",
       "_id": 10,
       "name": "Gran Turismo® 7",
       "imgItem": "./images/grand.png",
       "year": 2014
     },
     {
+      "category": "action",
       "_id": 11,
       "name": "Saints Row",
       "imgItem": "./images/saintsrow.png",
       "year": 2016
     },
     {
+      "category": "Role-Playing",
       "_id": 12,
       "name": "DEATHLOOP",
       "imgItem": "./images/deathloop.png",
       "year": 2013
     },
     {
+      "category": "Simulation",
       "_id": 13,
       "name": "Hogwarts Legacy",
       "imgItem": "./images/hogwarts.png",
       "year": 2016
     },
     {
+      "category": "Sports-Racing",
       "_id": 14,
       "name": "EA SPORTS™ FIFA 23",
       "imgItem": "./images/easports.png",
       "year": 2022
     },
     {
+      "category": "Simulation",
       "_id": 15,
       "name": "The Callisto Protocol",
       "imgItem": "./images/thecallisto.png",
       "year": 2022
     },
     {
+      "category": "Sports-Racing",
       "_id": 16,
       "name": "Skull and Bones",
       "imgItem": "./images/skull.png",
       "year": 2022
     },
     {
+      "category": "Simulation",
       "_id": 17,
       "name": "Gotham Knights",
       "imgItem": "./images/gotham.png",
       "year": 2022
     },
     {
+      "category": "Sports-Racing",
       "_id": 18,
       "name": "Forspoken",
       "imgItem": "./images/forspoken.png",
       "year": 2022
     },
     {
+      "category": "Simulation",
       "_id": 19,
       "name": "Call of Duty®: Modern Warfare® 2",
       "imgItem": "./images/callofduty.png",
       "year": 2022
     },
     {
+      "category": "Sports-Racing",
       "_id": 20,
       "name": "God of War™ Ragnarök",
       "imgItem": "./images/godofwar.png",
+      "year": 2022
+    },
+    {
+      "category": "Simulation",
+      "_id": 21,
+      "name": "Suicide Squad: Kill the Justice League",
+      "imgItem": "./images/suicide.png",
+      "year": 2022
+    },
+    {
+      "category": "Sports-Racing",
+      "_id": 22,
+      "name": "Resident Evil Village",
+      "imgItem": "./images/resident.png",
+      "year": 2022
+    },
+    {
+      "category": "Simulation",
+      "_id": 23,
+      "name": "Apex Legends™ PS5™ ",
+      "imgItem": "./images/apex.png",
+      "year": 2022
+    },
+    {
+      "category": "Sports-Racing",
+      "_id": 24,
+      "name": "F1® Manager 2022",
+      "imgItem": "./images/manager.png",
+      "year": 2022
+    },
+    {
+      "category": "Simulation",
+      "_id": 25,
+      "name": "Grand Theft Auto V",
+      "imgItem": "./images/grand.png",
+      "year": 2022
+    },
+    {
+      "category": "Sports-Racing",
+      "_id": 26,
+      "name": "Soul Hackers 2",
+      "imgItem": "./images/soul.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 27,
+      "name": "Genshin Impact",
+      "imgItem": "./images/genshin.png",
+      "year": 2022
+    },
+    {
+      "category": "action",
+      "_id": 28,
+      "name": "Two Point Campus PS4 & PS5",
+      "imgItem": "./images/twopoint.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 29,
+      "name": "Tiny Tina's Wonderlands",
+      "imgItem": "./images/tinytitna.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 30,
+      "name": "Cyberpunk 2077",
+      "imgItem": "./images/cyber.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 31,
+      "name": "Ghostwire: Tokyo",
+      "imgItem": "./images/ghostwire.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 32,
+      "name": "Inscryption",
+      "imgItem": "./images/inscry.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 33,
+      "name": "Far Cry 6",
+      "imgItem": "./images/farcry.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 34,
+      "name": "OlliOlli World",
+      "imgItem": "./images/oli.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 35,
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "imgItem": "./images/tom.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 36,
+      "name": "Sifu",
+      "imgItem": "./images/sifu.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 37,
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "imgItem": "./images/tom.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 38,
+      "name": "Destiny 2",
+      "imgItem": "./images/destiny.png",
+      "year": 2022
+    },
+    {
+      "category": "Adventure",
+      "_id": 39,
+      "name": "Among Us",
+      "imgItem": "./images/among.png",
+      "year": 2022
+    },
+    {
+      "category": "Strategy",
+      "_id": 40,
+      "name": "Trek to Yomi",
+      "imgItem": "./images/trek.png",
       "year": 2022
     }
   ],

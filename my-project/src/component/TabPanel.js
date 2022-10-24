@@ -1,10 +1,14 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
+import RenderUi from "./childComponent/RenderUi";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
+import { useSelector, useDispatch } from "react-redux";
+import { getitems } from "../redux/slice/producSlice";
+import InfoGame from "./childComponent/InfoGame";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -38,44 +42,64 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs(props) {
-  const { products } = props;
-  console.log(products);
+export default function BasicTabs() {
+  const [listCateroly, setListCateroly] = useState("action");
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getitems(listCateroly));
+  }, [listCateroly]);
+
+  const { items } = useSelector((state) => state.products);
+  const { products } = useSelector((state) => state.products);
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  console.log(items);
+  if (items === 0) return <h1>loading...</h1>;
+
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-        </Tabs>
+    <div>
+      <h1>Category</h1>
+      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+        <Box sx={{ borderBottsom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+          >
+            {/* <Tab
+              onClick={() => {
+                setListCateroly("");
+              }}
+              label="all"
+            /> */}
+            {products &&
+              products.category.map((item, index) => {
+                return (
+                  <Tab
+                    key={index}
+                    onClick={() => {
+                      setListCateroly(item);
+                    }}
+                    label={item}
+                    {...a11yProps(index)}
+                  />
+                );
+              })}
+          </Tabs>
+        </Box>
       </Box>
-      <TabPanel value={value} index={0}>
-        {products.itemBlog.map((item, key) => {
-          return (
-            <div key={key} className="">
-              <img src={item.imgItem} />
-            </div>
-          );
+
+      <div className="row">
+        {items.map((item, index) => {
+          return <RenderUi item={item} />;
         })}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-    </Box>
+      </div>
+    </div>
   );
 }
 

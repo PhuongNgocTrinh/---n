@@ -12,7 +12,7 @@ import User from "./page/User";
 import InfoGame from "./component/childComponent/InfoGame";
 import ListItem from "./component/childComponent/ListItem";
 
-import { getFectProdust } from "./redux/slice/producSlice";
+import { getFectProdust, getitems } from "./redux/slice/producSlice";
 
 function App() {
   const dispatch = useDispatch();
