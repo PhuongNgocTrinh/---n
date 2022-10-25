@@ -58,7 +58,6 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
-  console.log(items);
   if (items === 0) return <h1>loading...</h1>;
 
   return (
@@ -96,7 +95,7 @@ export default function BasicTabs() {
 
       <div className="row">
         {items.map((item, index) => {
-          return <RenderUi item={item} />;
+          return <RenderUi key={index} item={item} />;
         })}
       </div>
     </div>

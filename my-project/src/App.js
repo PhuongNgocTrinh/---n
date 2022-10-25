@@ -12,14 +12,13 @@ import User from "./page/User";
 import InfoGame from "./component/childComponent/InfoGame";
 import ListItem from "./component/childComponent/ListItem";
 
-import { getFectProdust, getitems } from "./redux/slice/producSlice";
+import { getFectProdust } from "./redux/slice/producSlice";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getFectProdust());
   }, []);
-
   // const products = data.products;
 
   return (
@@ -32,7 +31,7 @@ function App() {
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="fqa" element={<FQA />} />
           <Route path="login" element={<User />} />
-          <Route path="infoGame" element={<InfoGame />} />
+          <Route path="infoGame/:id" element={<InfoGame />} />
           <Route path="listItem" element={<ListItem />} />
         </Route>
       </Routes>

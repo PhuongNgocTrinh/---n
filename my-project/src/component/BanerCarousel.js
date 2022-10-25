@@ -17,7 +17,7 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import { baseUrl } from "./config";
 import TitleOfBanner from "../component/TitleOfBanner";
 import "../AppCss/App.css";
-export default function BanerCarousel() {
+export default function BanerCarousel({ products }) {
   const settings = {
     customPaging: function (i) {
       return (
@@ -37,24 +37,14 @@ export default function BanerCarousel() {
   return (
     <Carousel>
       <Slider {...settings}>
-        <Prv>
-          <SliderCrs className="img-child" src={baseUrl + "/abstract01.png"} />
-          <TitleOfBanner />
-        </Prv>
-        <div>
-          <SliderCrs className="img-child" src={baseUrl + "/abstract02.png"} />
-        </div>
-        <Prv>
-          <SliderCrs className="img-child" src={baseUrl + "/abstract03.png"} />
-          <TitleOfBanner />
-        </Prv>{" "}
-        <Prv>
-          <SliderCrs className="img-child" src={baseUrl + "/abstract04.png"} />
-          <TitleOfBanner />
-        </Prv>
-        <div>
-          <SliderCrs className="img-child" src={baseUrl + "/abstract05.png"} />
-        </div>
+        {products.imgBaner.map((item, index) => {
+          return (
+            <Prv key={index}>
+              <SliderCrs className="img-child" src={baseUrl + item.img} />
+              <TitleOfBanner />
+            </Prv>
+          );
+        })}
       </Slider>
     </Carousel>
   );

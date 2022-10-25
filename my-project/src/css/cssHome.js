@@ -59,6 +59,7 @@ export const DisplayFlex = styled.div`
   padding: 57px 21px;
   display: flex;
   justify-content: center;
+  margin: 50px 0;
 `;
 // baner carousel
 export const Carousel = styled.div`
@@ -77,6 +78,7 @@ export const SliderCrs = styled.img`
 
 export const Extraordina = styled.h4`
   text-align: center;
+  margin-bottom: 20px;
 `;
 export const BodyItem = styled.div`
   width: 100%;
@@ -164,4 +166,7 @@ export const ImgZ98 = styled.div`
   z-index: 98;
   top: 0;
   left: 0;
+`;
+export const MarginBT = styled.div`
+  margin: 50px 0;
 `;

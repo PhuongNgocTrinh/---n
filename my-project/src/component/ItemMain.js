@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "../AppCss/CssForSlick.css";
 const ItemMain = (props) => {
   const { products } = props;
-
   const settings = {
     className: "center",
     rows: 2,
@@ -51,14 +50,14 @@ const ItemMain = (props) => {
     ],
   };
   return (
-    <BodyItem>
+    <BodyItem className="321">
       <div className="container">
         <h5>New releases</h5>
         <p>Great PS5 and PS4 games available now</p>
         <Slider className="slider" {...settings}>
           {products.items.map((items, index) => {
             return (
-              <Link key={index} to="infoGame">
+              <Link key={index} to={`infoGame/${items._id}`}>
                 <ItemsPadding>
                   <ImgHoverItem src={items.imgItem} />
                   <p>{items.name}</p>
