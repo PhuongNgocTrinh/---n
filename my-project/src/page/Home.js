@@ -6,6 +6,7 @@ import {
   TitleBanerDow,
   Extraordina,
   HeightItem,
+  MarginBT,
 } from "../css/cssHome";
 import { DflexAll } from "../css/cssComponent";
 import { Link } from "react-router-dom";
@@ -23,9 +24,9 @@ const Home = () => {
   if (products === 0) return <h1>undefined</h1>;
   return (
     <div>
-      <BanerCarousel />
+      <BanerCarousel products={products} />
 
-      <div>
+      <MarginBT className="abc">
         <Prv>
           <Extraordina classname="Extraordinary">
             Extraordinary console exclusive games from
@@ -46,8 +47,8 @@ const Home = () => {
             </DflexAll>
           </TitleBanerDow>
         </DisplayFlex>
-      </div>
-      <div className="abc">
+      </MarginBT>
+      <div className="">
         <ItemMain products={products} />
       </div>
       <div className="container">

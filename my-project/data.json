@@ -13,284 +13,290 @@
       "category": "action",
       "_id": 1,
       "name": "ending ring",
-      "imgItem": "./images/endingring.png",
+      "imgItem": "/images/endingring.png",
       "year": 2018
     },
     {
       "category": "Role-Playing",
       "_id": 2,
       "name": "horizon",
-      "imgItem": "./images/horizon.png",
+      "imgItem": "/images/horizon.png",
       "year": 2022
     },
     {
       "category": "action",
       "_id": 3,
       "name": "Stray",
-      "imgItem": "./images/stray.png",
+      "imgItem": "/images/stray.png",
       "year": 2022
     },
     {
       "category": "Role-Playing",
       "_id": 4,
       "name": "Madden NFL 23",
-      "imgItem": "./images/madden.png",
+      "imgItem": "/images/madden.png",
       "year": 2015
     },
     {
       "category": "action",
       "_id": 5,
       "name": "UNCHARTED™: Legacy of Thieves Collection",
-      "imgItem": "./images/uncharted.png",
+      "imgItem": "/images/uncharted.png",
       "year": 2016
     },
     {
       "category": "Role-Playing",
       "_id": 6,
       "name": "The Last of Us™ Part I",
-      "imgItem": "./images/thelastofus.png",
+      "imgItem": "/images/thelastofus.png",
       "year": 2015
     },
     {
       "category": "action",
       "_id": 7,
       "name": "Dying Light 2 Stay Human",
-      "imgItem": "./images/dying.png",
+      "imgItem": "/images/dying.png",
       "year": 2016
     },
     {
       "category": "Role-Playing",
       "_id": 8,
       "name": "LEGO® Star Wars: The Skywalker Saga",
-      "imgItem": "./images/legostarwars.png",
+      "imgItem": "/images/legostarwars.png",
       "year": 2011
     },
     {
       "category": "action",
       "_id": 9,
       "name": "Ghostwire: Tokyo",
-      "imgItem": "./images/ghostwire.png",
+      "imgItem": "/images/ghostwire.png",
       "year": 2016
     },
     {
       "category": "Role-Playing",
       "_id": 10,
       "name": "Gran Turismo® 7",
-      "imgItem": "./images/grand.png",
+      "imgItem": "/images/grand.png",
       "year": 2014
     },
     {
       "category": "action",
       "_id": 11,
       "name": "Saints Row",
-      "imgItem": "./images/saintsrow.png",
+      "imgItem": "/images/saintsrow.png",
       "year": 2016
     },
     {
       "category": "Role-Playing",
       "_id": 12,
       "name": "DEATHLOOP",
-      "imgItem": "./images/deathloop.png",
+      "imgItem": "/images/deathloop.png",
       "year": 2013
     },
     {
       "category": "Simulation",
       "_id": 13,
       "name": "Hogwarts Legacy",
-      "imgItem": "./images/hogwarts.png",
+      "imgItem": "/images/hogwarts.png",
       "year": 2016
     },
     {
       "category": "Sports-Racing",
       "_id": 14,
       "name": "EA SPORTS™ FIFA 23",
-      "imgItem": "./images/easports.png",
+      "imgItem": "/images/easports.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 15,
       "name": "The Callisto Protocol",
-      "imgItem": "./images/thecallisto.png",
+      "imgItem": "/images/thecallisto.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 16,
       "name": "Skull and Bones",
-      "imgItem": "./images/skull.png",
+      "imgItem": "/images/skull.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 17,
       "name": "Gotham Knights",
-      "imgItem": "./images/gotham.png",
+      "imgItem": "/images/gotham.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 18,
       "name": "Forspoken",
-      "imgItem": "./images/forspoken.png",
+      "imgItem": "/images/forspoken.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 19,
       "name": "Call of Duty®: Modern Warfare® 2",
-      "imgItem": "./images/callofduty.png",
+      "imgItem": "/images/callofduty.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 20,
       "name": "God of War™ Ragnarök",
-      "imgItem": "./images/godofwar.png",
+      "imgItem": "/images/godofwar.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 21,
       "name": "Suicide Squad: Kill the Justice League",
-      "imgItem": "./images/suicide.png",
+      "imgItem": "/images/suicide.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 22,
       "name": "Resident Evil Village",
-      "imgItem": "./images/resident.png",
+      "imgItem": "/images/resident.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 23,
       "name": "Apex Legends™ PS5™ ",
-      "imgItem": "./images/apex.png",
+      "imgItem": "/images/apex.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 24,
       "name": "F1® Manager 2022",
-      "imgItem": "./images/manager.png",
+      "imgItem": "/images/manager.png",
       "year": 2022
     },
     {
       "category": "Simulation",
       "_id": 25,
       "name": "Grand Theft Auto V",
-      "imgItem": "./images/grand.png",
+      "imgItem": "/images/grand.png",
       "year": 2022
     },
     {
       "category": "Sports-Racing",
       "_id": 26,
       "name": "Soul Hackers 2",
-      "imgItem": "./images/soul.png",
+      "imgItem": "/images/soul.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 27,
       "name": "Genshin Impact",
-      "imgItem": "./images/genshin.png",
+      "imgItem": "/images/genshin.png",
       "year": 2022
     },
     {
       "category": "action",
       "_id": 28,
       "name": "Two Point Campus PS4 & PS5",
-      "imgItem": "./images/twopoint.png",
+      "imgItem": "/images/twopoint.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 29,
       "name": "Tiny Tina's Wonderlands",
-      "imgItem": "./images/tinytitna.png",
+      "imgItem": "/images/tinytitna.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 30,
       "name": "Cyberpunk 2077",
-      "imgItem": "./images/cyber.png",
+      "imgItem": "/images/cyber.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 31,
       "name": "Ghostwire: Tokyo",
-      "imgItem": "./images/ghostwire.png",
+      "imgItem": "/images/ghostwire.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 32,
       "name": "Inscryption",
-      "imgItem": "./images/inscry.png",
+      "imgItem": "/images/inscry.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 33,
       "name": "Far Cry 6",
-      "imgItem": "./images/farcry.png",
+      "imgItem": "/images/farcry.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 34,
       "name": "OlliOlli World",
-      "imgItem": "./images/oli.png",
+      "imgItem": "/images/oli.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 35,
       "name": "Tom Clancy's Rainbow Six Siege",
-      "imgItem": "./images/tom.png",
+      "imgItem": "/images/tom.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 36,
       "name": "Sifu",
-      "imgItem": "./images/sifu.png",
+      "imgItem": "/images/sifu.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 37,
       "name": "Tom Clancy's Rainbow Six Siege",
-      "imgItem": "./images/tom.png",
+      "imgItem": "/images/tom.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 38,
       "name": "Destiny 2",
-      "imgItem": "./images/destiny.png",
+      "imgItem": "/images/destiny.png",
       "year": 2022
     },
     {
       "category": "Adventure",
       "_id": 39,
       "name": "Among Us",
-      "imgItem": "./images/among.png",
+      "imgItem": "/images/among.png",
       "year": 2022
     },
     {
       "category": "Strategy",
       "_id": 40,
       "name": "Trek to Yomi",
-      "imgItem": "./images/trek.png",
+      "imgItem": "/images/trek.png",
       "year": 2022
     }
   ],
-  "pathImage": "https://img.ophim.cc/uploads/movies/",
+  "imgBaner": [
+    { "img": "/abstract01.png" },
+    { "img": "/abstract02.png" },
+    { "img": "/abstract03.png" },
+    { "img": "/abstract04.png" },
+    { "img": "/abstract05.png" }
+  ],
   "hotgame": {
     "_id": 20,
     "name": "Horizon Forbidden West™",
@@ -298,5 +304,67 @@
     "imgItem": "./images/hotgame.png",
     "childImgItem": "./images/childGamehot.png",
     "year": 2022
-  }
+  },
+  "blogs": [
+    {
+      "id": 1,
+      "img": "/images/imgblog.png",
+      "title": "God of War Ragnarök – Hands-on gameplay report",
+      "text": "Our return to Midgard and the rest of the nine realms is nearly here. God of War Ragnarök launches on PS5 and PS4 on November 9, and Ive had the lucky opportunity to scout ahead and go hands on with the PS5 version of Kratos and Atreus continuing journey. No big story spoilers lie ahead"
+    },
+    {
+      "id": 2,
+      "img": "/images/imgblog1.png",
+      "title": "Share of the Week  – Ghostwire: Tokyo",
+      "text": "Last week, we asked you to share the terrifying yokai of Ghostwire: Tokyo using #PSshare #PSBlog. Here are this week’s spooky shares: Gurararala shares a headless schoolgirl dashing through the street. VrPhotoGamess shares faceless suited men with broken umbrellas skulking around a green-lit hospital. snkn_shito shares Akito sending a round red blast of energy from"
+    },
+    {
+      "id": 3,
+      "img": "/images/imgblog2.png",
+      "title": "God of War Ragnarök Animated Family Portraits highlight 5 key relationships",
+      "text": " Since the Family Portrait series began five weeks ago, we’ve had the great pleasure of showcasing works created by a fantastic group of artists. These portraits showcase key relationships that are foundational to God of War Ragnarök. Now that the series has wrapped, we’ve put together a gallery featuring all five works on the God"
+    },
+    {
+      "id": 4,
+      "img": "/images/imgblog3.png",
+      "title": "New Resident Evil 4 trailer, Resident Evil Village Gold Edition demo and more revealed in today’s Resident Evil Showcase",
+      "text": "At Santa Monica Studio, one our guiding phrases is “we’re fans of our fans.” Whether it’s a reaction to a trailer, a deep-dive lore video, or cosplay – knowing that there is an audience that appreciates all the details in our work motivates us to create something worthy of God of War fans. Cosplayers are"
+    },
+    {
+      "id": 5,
+      "img": "/images/imgblog4.png",
+      "title": "From Concept Art to Cosplay: Creating Kratos and Atreus’ new looks for God of War Ragnarök",
+      "text": "Greetings everyone! I’m happy to announce that our newest trailer—Ambition—is now live. Rather than focusing on action as we did in our last reveal, this time we wanted to give the world a more in-depth look at Final Fantasy XVI’s lore and its rich cast of characters—with the Dominants front and center. The flames of"
+    },
+    {
+      "id": 6,
+      "img": "/images/imgblog5.png",
+      "title": "New Final Fantasy XVI “Ambition” trailer offers an in-depth look into the characters and world of Valisthea",
+      "text": "What a beautiful day! A beautiful day to surrender to the void… or, as we at Media Molecule have come to know it, The Land Of Lost Dreams. That’s right: this year’s Halloween event, All Hallows’: The Land of Lost Dreams, is available to play in Dreams right now. Is there a better way to"
+    },
+    {
+      "id": 7,
+      "img": "/images/imgblog6.png",
+      "title": "Visit All Hallows’: The Land of Lost Dreams today",
+      "text": "What a beautiful day! A beautiful day to surrender to the void… or, as we at Media Molecule have come to know it, The Land Of Lost Dreams. That’s right: this year’s Halloween event, All Hallows’: The Land of Lost Dreams, is available to play in Dreams right now. Is there a better way to"
+    },
+    {
+      "id": 8,
+      "img": "/images/imgblog7.png",
+      "title": "11 things you must know about Star Ocean The Divine Force",
+      "text": "Star Ocean The Divine Force will soon touch down on PS5 and PS4! This action-packed science-fiction RPG presents a bold new vision for the beloved RPG series, with a powerful story, innovative traversal mechanics, and a combat system that’s just… *chef’s kiss. That said, we suspect that some of you may still be wondering what"
+    },
+    {
+      "id": 9,
+      "img": "/images/imgblog8.png",
+      "title": "River City Girls 2: New Marian gameplay and character design details revealed",
+      "text": "Hi, I’m Bannon Rudis. I’m one of the directors over at WayForward. WayForward does those Shantae and River City Girls games, among many other things. I have personally been making River City games for almost a decade now alongside Arc System Works. I started by reverse-engineering River City sprites and animations and trying my hardest"
+    },
+    {
+      "id": 10,
+      "img": "/images/imgblog9.png",
+      "title": "Genshin Impact Version 3.2: Akasha pulses and the Kalpa Flame rises in new update",
+      "text": "Hello, Travelers! Your Genshin Impact dev team is here to meet you again. After two months in the Nation of Wisdom, the next update is now confirmed to arrive on November 2. With Version 3.2 “Akasha Pulses, the Kalpa Flame Rises,” we will finally come to the very moment where Sumeru’s fate will be decided."
+    }
+  ]
 }

@@ -5,6 +5,7 @@ import { useState } from "react";
 const initialState = {
   products: [] | null,
   items: [] | null,
+  listItemID: [] | null,
 };
 
 export const getFectProdust = createAsyncThunk(
@@ -39,6 +40,22 @@ export const getitems = createAsyncThunk(
     }
   }
 );
+export const getById = createAsyncThunk("products/getById", async (itemId) => {
+  try {
+    const responsive = await axios.get(
+      `https://main-data-8ef87-default-rtdb.firebaseio.com/items.json?orderBy="_id"&equalTo=${itemId}`
+    );
+    const myArr1 = [];
+
+    for (let newItem in responsive.data) {
+      myArr1.push(responsive.data[newItem]);
+    }
+    return myArr1;
+    // console.log(responsive.data);
+  } catch (error) {
+    console.log(error);
+  }
+});
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -53,6 +70,9 @@ const productsSlice = createSlice({
     });
     build.addCase(getitems.fulfilled, (state, action) => {
       state.items = action.payload;
+    });
+    build.addCase(getById.fulfilled, (state, action) => {
+      state.listItemID = action.payload;
     });
   },
 });
