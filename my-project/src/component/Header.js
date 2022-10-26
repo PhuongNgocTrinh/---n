@@ -3,44 +3,57 @@ import Footer from "./Footer";
 import React, { useState, useRef, useEffect } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import "../AppCss/App.css";
-import { DflexAll, Img, Logo, ListMenu, ItemMenu } from "../css/cssComponent";
+import Headroom from "../../src/index";
+import {
+  DflexAll,
+  Img,
+  Logo,
+  ListMenu,
+  Img2,
+  Animate,
+} from "../css/cssComponent";
+
+import { CSSTransitionGroup } from "react-transition-group";
+import "animate.css/animate.min.css";
 const Header = () => {
-  const src = "../images/logo2.png";
   const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
-  const headerRef = useRef(null);
 
   // handle scroll event
-  const handleScroll = (elTopOffset, elHeight) => {
-    if (window.pageYOffset > elTopOffset + elHeight) {
-      setSticky({ isSticky: true, offset: elHeight });
-    } else {
-      setSticky({ isSticky: false, offset: 0 });
-    }
-  };
-
+  const elemenScroll = useRef();
+  var scrollableElement = document.body;
   useEffect(() => {
-    var header = headerRef.current.getBoundingClientRect();
-    const handleScrollEvent = () => {
-      handleScroll(header.top, header.height);
-    };
+    scrollableElement.addEventListener("wheel", checkScrollDirection);
 
-    window.addEventListener("scroll", handleScrollEvent);
-
-    return () => {
-      window.removeEventListener("scroll", handleScrollEvent);
-    };
-  }, []);
+    function checkScrollDirection(event) {
+      if (checkScrollDirectionIsUp(event)) {
+        elemenScroll.current.style.top = "0px";
+      } else {
+        elemenScroll.current.style.top = "-70px";
+      }
+    }
+    function checkScrollDirectionIsUp(event) {
+      if (event.wheelDelta) {
+        return event.wheelDelta > 0;
+      }
+      return event.deltaY < 0;
+    }
+  });
+  const src = "../images/avatar.png";
+  const src2 = "../images/avatar2.png";
   return (
     <div className="main-body">
       <DflexAll
+        ref={elemenScroll}
         id="sticky-header"
         className={`navbar${sticky.isSticky ? " sticky" : ""} nav`}
-        ref={headerRef}
       >
         <Logo className="logo">
-          <Link to="/">
-            <Img className="img-logo" src={src} />
-          </Link>
+          <CSSTransitionGroup>
+            <Img src={src} />
+          </CSSTransitionGroup>{" "}
+          <CSSTransitionGroup>
+            <Img src={src2} />
+          </CSSTransitionGroup>
         </Logo>
         <ListMenu className="list-menu">
           <Link to="/" className="items-menu">
@@ -72,6 +85,7 @@ const Header = () => {
           </div>
         </DflexAll>
       </DflexAll>
+
       <Outlet />
       <Footer />
     </div>

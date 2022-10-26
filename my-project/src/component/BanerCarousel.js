@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Carousel } from "../css/cssHome";
-
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+import "animate.css/animate.min.css";
 import {
   Title,
   Img,
@@ -9,14 +9,20 @@ import {
   Prv,
   TitleBanerDow,
   SliderCrs,
+  TitleBanner,
+  Carousel,
 } from "../css/cssHome";
+import { LogoWow } from "../css/cssComponent";
+
 import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../../node_modules/slick-carousel/slick/slick.css";
 // import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { baseUrl } from "./config";
 import TitleOfBanner from "../component/TitleOfBanner";
 import "../AppCss/App.css";
+import { CSSTransitionGroup } from "react-transition-group";
+
 export default function BanerCarousel({ products }) {
   const settings = {
     customPaging: function (i) {
@@ -41,7 +47,13 @@ export default function BanerCarousel({ products }) {
           return (
             <Prv key={index}>
               <SliderCrs className="img-child" src={baseUrl + item.img} />
-              <TitleOfBanner />
+              <TitleBanner className="title-text">
+                <CSSTransitionGroup>
+                  <LogoWow className="animate__repeat-2" src={item.textImg} />
+                </CSSTransitionGroup>
+
+                <TitleOfBanner data={item} />
+              </TitleBanner>
             </Prv>
           );
         })}
