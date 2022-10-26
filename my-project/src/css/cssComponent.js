@@ -7,8 +7,9 @@ export const DflexAll = styled.div`
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(248, 249, 250, 0.5);
     color: #fff;
+    transition: 0.4s;
   }
   &.user {
     display: flex;
@@ -41,14 +42,24 @@ export const DflexAll = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 50%;
+  width: 40%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  animation: "rotateOut";
+`;
+
+export const Img2 = styled.img`
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 `;
 export const Logo = styled.div`
   &.logo {
     width: 15%;
     height: 100%;
+    position: relative;
   }
 `;
 export const ListMenu = styled.div`
@@ -64,7 +75,7 @@ export const ListMenu = styled.div`
     list-style: none;
     text-decoration: none;
     font-weight: 600;
-    color: #fff;
+    color: #000c;
   }
   &.list-menu a:hover {
     /* border-bottom: 1px solid #0d6efd; */
@@ -76,5 +87,8 @@ export const ItemMenu = styled.div``;
 export const LogoWow = styled.img`
   width: 100%;
   margin-bottom: 20px;
-  transform: translateY();
+  transition: 1.2s;
+  animation: "zoomInDown";
+  animation-duration: 3s;
+  --animation-repeat: 2;
 `;

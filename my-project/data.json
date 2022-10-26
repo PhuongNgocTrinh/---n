@@ -291,11 +291,11 @@
     }
   ],
   "imgBaner": [
-    { "img": "/abstract01.png" },
-    { "img": "/abstract02.png" },
-    { "img": "/abstract03.png" },
-    { "img": "/abstract04.png" },
-    { "img": "/abstract05.png" }
+    { "img": "/abstract01.png", "textImg": "/images/logoWOW.png" },
+    { "img": "/abstract02.png", "textImg": "/images/textBaner.png" },
+    { "img": "/abstract03.png", "textImg": "/images/textBaner2.png" },
+    { "img": "/abstract04.png", "textImg": "/images/textBaner1.png" },
+    { "img": "/abstract05.png", "textImg": "/images/textBaner3.png" }
   ],
   "hotgame": {
     "_id": 20,

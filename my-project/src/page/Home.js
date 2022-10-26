@@ -18,6 +18,8 @@ import BanerCarousel from "../component/BanerCarousel";
 import FullWidthTabs from "../component/TabPanel";
 import BlogBody from "../component/BlogBody";
 import TabPanel from "../component/TabPanel";
+import Test from "../component/Test";
+
 const Home = () => {
   const { products } = useSelector((state) => state.products);
 
@@ -54,6 +56,7 @@ const Home = () => {
       <div className="container">
         <BlogBody products={products} />
       </div>
+
       {/* <Link to="listItem">see all</Link> */}
       <div className="container">
         <TabPanel />
