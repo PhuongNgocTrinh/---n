@@ -61,9 +61,9 @@ export default function BasicTabs() {
   if (items === 0) return <h1>loading...</h1>;
 
   return (
-    <div>
+    <div className="main-category">
       <h1>Category</h1>
-      <Box sx={{ width: "100%", marginBottom: "20px" }}>
+      <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottsom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}

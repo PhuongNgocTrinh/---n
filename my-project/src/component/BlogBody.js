@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Stack, Button } from "react-bootstrap";
 import Slider from "react-slick";
-import { ImgBlog } from "../css/cssHome";
+import { ImgBlog, Pblog, H5blog } from "../css/cssHome";
+import { Link } from "react-router-dom";
 
 const BlogBody = (props) => {
   const { products } = props;
@@ -21,11 +22,11 @@ const BlogBody = (props) => {
         {products &&
           products.blogs.map((item, key) => {
             return (
-              <div key={key} className="blog-items">
+              <Link to={`blogid/${item.id}`} key={key} className="blog-items">
                 <ImgBlog src={item.img} />
-                <h5>{item.title}</h5>
-                <p>{item.text}</p>
-              </div>
+                <H5blog>{item.title}</H5blog>
+                <Pblog>{item.text}</Pblog>
+              </Link>
             );
           })}
       </Slider>

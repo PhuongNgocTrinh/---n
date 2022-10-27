@@ -6,6 +6,7 @@ const initialState = {
   products: [] | null,
   items: [] | null,
   listItemID: [] | null,
+  blogsId: [] | null,
 };
 
 export const getFectProdust = createAsyncThunk(
@@ -56,6 +57,25 @@ export const getById = createAsyncThunk("products/getById", async (itemId) => {
     console.log(error);
   }
 });
+export const getBlogById = createAsyncThunk(
+  "products/getBlogById",
+  async (itemBlogId) => {
+    try {
+      const responsive = await axios.get(
+        `https://main-data-8ef87-default-rtdb.firebaseio.com/blogs.json?orderBy="id"&equalTo=${itemBlogId}`
+      );
+      console.log(responsive.data);
+      const myArr2 = [];
+
+      for (let newItem in responsive.data) {
+        myArr2.push(responsive.data[newItem]);
+      }
+      return myArr2;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -73,6 +93,9 @@ const productsSlice = createSlice({
     });
     build.addCase(getById.fulfilled, (state, action) => {
       state.listItemID = action.payload;
+    });
+    build.addCase(getBlogById.fulfilled, (state, action) => {
+      state.blogsId = action.payload;
     });
   },
 });
