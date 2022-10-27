@@ -7,6 +7,7 @@ import {
   Extraordina,
   HeightItem,
   MarginBT,
+  Margincategory,
 } from "../css/cssHome";
 import { DflexAll } from "../css/cssComponent";
 import { Link } from "react-router-dom";
@@ -53,14 +54,14 @@ const Home = () => {
       <div className="">
         <ItemMain products={products} />
       </div>
+      <Margincategory className="container">
+        <TabPanel />
+      </Margincategory>
       <div className="container">
         <BlogBody products={products} />
       </div>
 
       {/* <Link to="listItem">see all</Link> */}
-      <div className="container">
-        <TabPanel />
-      </div>
     </div>
   );
 };

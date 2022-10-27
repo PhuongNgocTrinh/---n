@@ -1,12 +1,13 @@
-import { Img } from "../../css/cssHome";
+import { Link } from "react-router-dom";
+import { Img, Pcategory } from "../../css/cssHome";
 const RenderUi = (props) => {
   const { item } = props;
   return (
     <div className="col-3">
-      <div className="caretory-game">
+      <Link to={`infoGame/${item._id}`} className="caretory-game">
         <Img className="caretory-img" src={item.imgItem} />
-        <p>{item.name}</p>
-      </div>
+        <Pcategory>{item.name}</Pcategory>
+      </Link>
     </div>
   );
 };

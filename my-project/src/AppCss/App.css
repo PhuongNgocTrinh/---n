@@ -80,8 +80,8 @@
   top: -8% !important;
   z-index: 100;
 }
-.slick-slider {
-  /* padding-top: 100px !important; */
+.slick-slide div {
+  /* margin-top: 10px; */
 }
 .slick-prev:before,
 .slick-next:before {
@@ -89,16 +89,16 @@
 }
 .container div .slick-slider .slick-prev:before,
 .container div .slick-slider .slick-next:before {
-  color: #5f4b4b;
+  color: #2871c6;
 }
 .container div .slick-slider .slick-prev {
   left: 14px !important;
-  top: 46% !important;
+  top: 28% !important;
   z-index: 100;
 }
 .container div .slick-slider .slick-next {
-  top: 46% !important;
-  right: 14px !important;
+  top: 28% !important;
+  right: 24px !important;
 }
 .blog-main .slick-initialized .slick-list .slick-track .slick-slide {
   padding: 0 10px;
@@ -159,4 +159,20 @@
 }
 .container .slick-slider .slick-list .slick-track .slick-cloned div {
   margin-bottom: 20px;
+}
+.main-category .row .col-3 {
+  margin-top: 20px;
+}
+.main-category .row .col-3 .caretory-game {
+  text-decoration: none;
+  color: #000c;
+}
+.blog-items {
+  text-decoration: none;
+  color: #000c;
+}
+/* infogame */
+.main-baner-infogame {
+  background-color: rgba(33, 33, 30);
+  width: 100%;
 }

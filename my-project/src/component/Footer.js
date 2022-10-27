@@ -6,8 +6,41 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MailIcon from "@mui/icons-material/Mail";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Box from "@mui/material/Box";
+import Icon from "@mui/material/Icon";
+import MdPhone from "@mui/icons-material/Phone";
+import Chip from "@mui/material/Chip";
+import { pink } from "@mui/material/colors";
+import SvgIcon from "@mui/material/SvgIcon";
 export default function App() {
+  const theme = createTheme({
+    components: {
+      MuiIcon: {
+        styleOverrides: {
+          root: {
+            // Match 24px = 3 * 2 + 1.125 * 16
+            boxSizing: "content-box",
+            padding: 3,
+            fontSize: "1.125rem",
+          },
+        },
+      },
+    },
+  });
+  function HomeIcon(props) {
+    return (
+      <SvgIcon {...props}>
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      </SvgIcon>
+    );
+  }
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -17,22 +50,26 @@ export default function App() {
 
         <div>
           <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="facebook-f" />
+            <YouTubeIcon
+              fontSize="large"
+              sx={{ color: pink[500] }}
+              fab
+              icon="facebook-f"
+            />
           </a>
           <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="twitter" />
+            <FacebookIcon fontSize="large" color="primary" />
           </a>
           <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="google" />
+            <TwitterIcon color="primary" fontSize="large" fab icon="google" />
           </a>
           <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="github" />
+            <InstagramIcon
+              sx={{ color: pink[400] }}
+              fontSize="large"
+              fab
+              icon="instagram"
+            />
           </a>
         </div>
       </section>
@@ -53,49 +90,54 @@ export default function App() {
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 className="text-uppercase fw-bold mb-4">suport</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Angular
+                  Privacy Policy
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  React
+                  e terms of use
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Vue
+                  Websit
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Laravel
+                  PlayStation Studios
                 </a>
-              </p>
+              </p>{" "}
+              <p>
+                <a href="#!" className="text-reset">
+                  Legal Documents & Notices
+                </a>
+              </p>{" "}
             </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
                 <a href="#!" className="text-reset">
-                  Pricing
+                  Health warning{" "}
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Settings
+                  Age ratings
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Orders
+                  Intellectual property notices
                 </a>
               </p>
               <p>
                 <a href="#!" className="text-reset">
-                  Help
+                  PlayStation careers
                 </a>
               </p>
             </MDBCol>
@@ -103,18 +145,20 @@ export default function App() {
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
+                <LocationOnIcon icon="home" className="me-2" />
                 New York, NY 10012, US
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />
+                <MailIcon icon="envelope" className="me-3" />
                 info@example.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <ThemeProvider theme={theme}>
+                  <Chip icon={<MdPhone />} label="Call me :  + 01 234 567 88" />
+                </ThemeProvider>{" "}
               </p>
             </MDBCol>
           </MDBRow>

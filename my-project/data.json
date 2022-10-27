@@ -21,7 +21,72 @@
       "_id": 2,
       "name": "horizon",
       "imgItem": "/images/horizon.png",
-      "year": 2022
+      "year": 2022,
+      "detail": {
+        "title": "Horizon Forbidden West™(English/ Chinese/ Korean/ Thai Ver.)",
+        "video": "/videoGame/horizon.mp4",
+        "baner": "/imgInfoGame/horizon.png",
+        "overview": [
+          {
+            "textmain": "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats."
+          },
+          {
+            "text1": "Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon."
+          },
+          {
+            "text2": "The land is dying. Vicious storms and an unstoppable blight ravage the scattered remnants of humanity, while fearsome new machines prowl their borders. Life on Earth is hurtling towards another extinction, and no one knows why."
+          },
+          {
+            "text3": "It's up to Aloy to uncover the secrets behind these threats and restore order and balance to the world. Along the way, she must reunite with old friends, forge alliances with warring new factions and unravel the legacy of the ancient past – all the while trying to stay one step ahead of a seemingly undefeatable new enemy."
+          }
+        ],
+        "features": [
+          {
+            "imgF": "/imgInfoGame/horizonF.png",
+            "textMain": "Brave an expansive open world",
+            "text": "Discover distant lands, new enemies, rich cultures and striking characters."
+          },
+          {
+            "imgF": "/imgInfoGame/horizonF1.png",
+            "textMain": "A majestic frontier",
+            "text1": "Explore the lush forests, sunken cities and towering mountains of a far-future America."
+          },
+          {
+            "imgF": "/imgInfoGame/horizonF2.png",
+            "textMain": "Confront new dangers",
+            "text2": "Engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts."
+          },
+          {
+            "imgF": "/imgInfoGame/horizonF3.png",
+            "textMain": "Unravel startling mysteries",
+            "text3": "Uncover the secret behind Earth's imminent collapse and unlock a hidden chapter in the ancient past... one that will change Aloy forever."
+          }
+        ],
+        "figure": [
+          { "img": "/imgInfoGame/avt1.png" },
+          { "img": "/imgInfoGame/avt1.png" },
+          { "img": "/imgInfoGame/avt1.png" },
+          { "img": "/imgInfoGame/avt1.png" },
+          { "name": ["Aloy", "Sylens", "Erend", "Varl"] },
+          {
+            "info": [
+              "Aloy is the greatest machine hunter in the world of Horizon. Strong, independent, clever and compassionate, she started off as a motherless outcast and rose up to be a champion for all humankind. Along with all that, she’s got a powerful drive to unravel the mysteries of the Forbidden West, stop the blight, and save the planet.",
+              "Little is truly known about Sylens. A wandering scholar, sage and warrior, his past is a series of whispers, misdirections, and enigmas – all of which he encourages. As long as he can stay unseen in the shadows, he can freely pursue his obsession: learning everything he can about the origins of man and machine.",
+              "Erend is one of Aloy’s loyal companions. He is the Captain of the Vanguard, an elite group of warriors from the Oseram tribe. He can be courageous, humorous, and at times, self-effacing. But beneath that burly exterior is a good heart and a vulnerable soul that Aloy wants to protect. ",
+              "A warrior from the Nora tribe, Varl is one of Aloy’s returning companions in Horizon Forbidden West. Based on the events from the end of Horizon Zero Dawn, he, like many in the tribe, sees Aloy as the Anointed, a religious figure from the Nora’s beliefs who he is duty-bound to help. But more than that, he is kind and caring, and worries about Aloy as a person and the weight of the burden she carries.  "
+            ]
+          }
+        ],
+        "news": [
+          { "img": "/imgInfoGame/" },
+          {
+            "title": "Level up your look with the Horizon Forbidden West collection on ASOS"
+          },
+          {
+            "text": "While Aloy’s in-game outfits are aimed at her protection and survival, our unique partnership with ASOS is focused on ready-to-wear comfort for our fans. This unisex collection of gaming and streetwear apparel features a variety of joggers, hoodies and shirts, which work as either co-ords or individual pieces."
+          }
+        ]
+      }
     },
     {
       "category": "action",
@@ -315,7 +380,7 @@
     {
       "id": 2,
       "img": "/images/imgblog1.png",
-      "title": "Share of the Week  – Ghostwire: Tokyo",
+      "title": "Share of the Week  – Ghostwire: Tokyo - for ps4/ps5 PC",
       "text": "Last week, we asked you to share the terrifying yokai of Ghostwire: Tokyo using #PSshare #PSBlog. Here are this week’s spooky shares: Gurararala shares a headless schoolgirl dashing through the street. VrPhotoGamess shares faceless suited men with broken umbrellas skulking around a green-lit hospital. snkn_shito shares Akito sending a round red blast of energy from"
     },
     {

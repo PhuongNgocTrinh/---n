@@ -121,6 +121,7 @@ export const ItemsPadding = styled.div`
   object-fit: cover;
   p {
     color: #fff;
+    margin-top: 8px;
   }
   img {
     border-radius: 15px;
@@ -193,3 +194,41 @@ export const AnimateTest = styled.div`
 
   transition: 0.6s;
 `;
+export const Margincategory = styled.div`
+  margin-top: 50px;
+  margin-bottom: 50px;
+`;
+
+//blogbody
+export const H5blog = styled.h5`
+  text-decoration: none;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;
+export const Pblog = styled.p`
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;
+export const Pcategory = styled.div`
+  margin-top: 10px;
+  text-decoration: none;
+  list-style: none;
+`;
+export const PrvBanerInfo = styled.div`
+  position: relative;
+`;
+export const PbsBanerInfo = styled.div`
+  position: absolute;
+  top: 30%;
+  left: 3%;
+`;
+
+export const name = styled.div``;

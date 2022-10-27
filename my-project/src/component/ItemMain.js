@@ -15,10 +15,10 @@ const ItemMain = (props) => {
     rows: 2,
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 6,
 
-    slidesToScroll: 4,
+    slidesToScroll: 6,
     initialSlide: 0,
     centerPadding: "100px",
     centerMode: false,

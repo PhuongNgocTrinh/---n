@@ -10,6 +10,7 @@ import AboutUs from "./page/AboutUs";
 import FQA from "./page/FQA";
 import User from "./page/User";
 import InfoGame from "./component/childComponent/InfoGame";
+import InfoBlog from "./component/childComponent/InfoBlog";
 import ListItem from "./component/childComponent/ListItem";
 
 import { getFectProdust } from "./redux/slice/producSlice";
@@ -32,6 +33,7 @@ function App() {
           <Route path="fqa" element={<FQA />} />
           <Route path="login" element={<User />} />
           <Route path="infoGame/:id" element={<InfoGame />} />
+          <Route path="blogid/:id" element={<InfoBlog />} />
           <Route path="listItem" element={<ListItem />} />
         </Route>
       </Routes>
