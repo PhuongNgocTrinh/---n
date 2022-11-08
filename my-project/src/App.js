@@ -14,12 +14,14 @@ import InfoBlog from "./component/childComponent/InfoBlog";
 import ListItem from "./component/childComponent/ListItem";
 
 import { getFectProdust } from "./redux/slice/producSlice";
+import Cart from "./component/childComponent/Cart";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getFectProdust());
   }, []);
+
   // const products = data.products;
 
   return (
@@ -35,6 +37,7 @@ function App() {
           <Route path="infoGame/:id" element={<InfoGame />} />
           <Route path="blogid/:id" element={<InfoBlog />} />
           <Route path="listItem" element={<ListItem />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
       </Routes>
     </BrowserRouter>

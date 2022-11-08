@@ -1,6 +1,6 @@
 import { height } from "@mui/system";
-import styled from "styled-components";
-
+import styled, { keyframes } from "styled-components";
+import { bounce } from "react-animations";
 export const Img = styled.img`
   width: 100%;
   &.img-childBaner {
@@ -81,13 +81,37 @@ export const DisplayFlex = styled.div`
 // baner carousel
 export const Carousel = styled.div`
   padding-bottom: 150px;
+  .slick-slider .slick-prev,
+  .slick-slider .slick-next {
+    top: 51% !important;
+  }
+  .slick-slider .slick-prev {
+    left: 5% !important;
+  }
+  .slick-slider .slick-prev::before {
+    font-size: 40px !important;
+  }
+  .slick-slider .slick-next {
+    right: 6% !important;
+  }
+  .slick-slider .slick-next::before {
+    font-size: 40px !important;
+  }
+  .slick-slider .slick-dots li:not(.slick-active) {
+    opacity: 0.5;
+  }
+  .slick-slider .slick-dots .slick-active {
+    border: 2px solid #2871c6;
+    transform: translateY(-15px);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 10px 0px;
+  }
 `;
 
 export const SliderCrs = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 12px;
   &.img-child {
     border-radius: 0;
   }
@@ -125,13 +149,6 @@ export const ItemsPadding = styled.div`
   }
   img {
     border-radius: 15px;
-  }
-`;
-export const ImgHoverItem = styled.img`
-  width: 100%;
-  :hover {
-    transform: scale(1.05) !important;
-    cursor: pointer;
   }
 `;
 
@@ -189,8 +206,20 @@ export const MarginBT = styled.div`
   margin: 50px 0;
 `;
 export const AnimateTest = styled.div`
-  animation: "zoomInUp";
-  animation-duration: 3s;
+  animation: "fadeInUp";
+  animation-duration: 8s;
+
+  transition: 0.6s;
+`;
+export const AnimatePlay = styled.div`
+  animation: "fadeIn";
+  animation-duration: 8s;
+
+  transition: 0.6s;
+`;
+export const AnimateTitle = styled.h1`
+  animation: "slideInDown";
+  animation-duration: 5s;
 
   transition: 0.6s;
 `;
@@ -227,8 +256,118 @@ export const PrvBanerInfo = styled.div`
 `;
 export const PbsBanerInfo = styled.div`
   position: absolute;
-  top: 30%;
-  left: 3%;
+  top: 20%;
+  left: 5%;
+  width: 50%;
+  color: #fff;
+  .row .col-6,
+  h5 {
+    color: #fff;
+  }
+  .year-game {
+    margin-top: 20px;
+  }
+  .onlinePlayer {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
+export const Ps4Ps5 = styled.span`
+  border: 0.5px solid #fff;
+  padding: 4px 10px;
+  margin-right: 15px;
+`;
+export const ImgNofigure = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+`;
+export const Warring = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: black;
+  color: #fff;
+  .warring {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    p {
+      font-size: 0.75rem;
+    }
+  }
+`;
+export const MainImgTab = styled.div`
+  width: 100%;
+  border-radius: 20px;
+`;
+export const DivNone = styled.div`
+  margin-top: 0px !important;
+  visibility: hidden;
+  opacity: 0;
+`;
+export const ImgHoverItem = styled.img`
+  width: 100%;
+
+  transition: 0.2s;
+`;
 export const name = styled.div``;
+
+//cart
+export const MainCart = styled.div`
+  margin-top: 70px;
+  padding: 50px 130px;
+  background: rgb(18, 18, 18);
+  color: #fff;
+
+  .cart-item {
+    display: flex;
+  }
+  .child-cart {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    padding: 20px 20px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 8px;
+  }
+  .space {
+    border-bottom: 1px solid #000c;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .child-cart-1 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .price-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .main-total {
+    margin-top: 30px;
+  }
+  .Subtotal {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+`;
+export const ImgCart = styled.img`
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+`;

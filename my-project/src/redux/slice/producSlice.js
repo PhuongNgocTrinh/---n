@@ -7,10 +7,26 @@ const initialState = {
   items: [] | null,
   listItemID: [] | null,
   blogsId: [] | null,
+  itemsCart: [] | null,
 };
 
 export const getFectProdust = createAsyncThunk(
   "products/getFectProdust",
+  async () => {
+    try {
+      const responsive = await axios.get(
+        "https://main-data-8ef87-default-rtdb.firebaseio.com/.json"
+      );
+
+      return responsive.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
+
+export const getItemsCart = createAsyncThunk(
+  "products/getItemsCart",
   async () => {
     try {
       const responsive = await axios.get(
@@ -57,6 +73,7 @@ export const getById = createAsyncThunk("products/getById", async (itemId) => {
     console.log(error);
   }
 });
+
 export const getBlogById = createAsyncThunk(
   "products/getBlogById",
   async (itemBlogId) => {
@@ -76,6 +93,7 @@ export const getBlogById = createAsyncThunk(
     }
   }
 );
+
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -96,6 +114,9 @@ const productsSlice = createSlice({
     });
     build.addCase(getBlogById.fulfilled, (state, action) => {
       state.blogsId = action.payload;
+    });
+    build.addCase(getItemsCart.fulfilled, (state, action) => {
+      state.itemsCart = action.payload;
     });
   },
 });

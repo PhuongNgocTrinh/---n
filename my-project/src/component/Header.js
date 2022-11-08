@@ -11,12 +11,17 @@ import {
   ListMenu,
   Img2,
   Animate,
+  RotateInDiv,
+  RotateOutDiv,
 } from "../css/cssComponent";
-
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { CSSTransitionGroup } from "react-transition-group";
 import "animate.css/animate.min.css";
+import { useSelector } from "react-redux";
+
 const Header = () => {
   const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
+  const { cart } = useSelector((state) => state.carts);
 
   // handle scroll event
   const elemenScroll = useRef();
@@ -48,12 +53,14 @@ const Header = () => {
         className={`navbar${sticky.isSticky ? " sticky" : ""} nav`}
       >
         <Logo className="logo">
-          <CSSTransitionGroup>
-            <Img src={src} />
-          </CSSTransitionGroup>{" "}
-          <CSSTransitionGroup>
+          <RotateInDiv style={{ width: "100%", position: "absolute" }}>
+            {" "}
             <Img src={src2} />
-          </CSSTransitionGroup>
+          </RotateInDiv>
+          <RotateOutDiv style={{ width: "100%", position: "absolute" }}>
+            {" "}
+            <Img src={src} />
+          </RotateOutDiv>
         </Logo>
         <ListMenu className="list-menu">
           <Link to="/" className="items-menu">
@@ -83,6 +90,12 @@ const Header = () => {
           <div className="icon-search">
             {<SearchIcon className="icon-search-child" />}
           </div>
+          <Link className="icon-cart" to="cart">
+            {<ShoppingCartIcon />}
+            <div className={cart.length === 0 ? "" : "count"}>
+              <span>{cart.length === 0 ? "" : cart.length} </span>
+            </div>
+          </Link>
         </DflexAll>
       </DflexAll>
 

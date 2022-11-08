@@ -50,26 +50,16 @@ export default function App() {
 
         <div>
           <a href="" className="me-4 text-reset">
-            <YouTubeIcon
-              fontSize="large"
-              sx={{ color: pink[500] }}
-              fab
-              icon="facebook-f"
-            />
+            <YouTubeIcon fontSize="large" sx={{ color: pink[500] }} />
           </a>
           <a href="" className="me-4 text-reset">
             <FacebookIcon fontSize="large" color="primary" />
           </a>
           <a href="" className="me-4 text-reset">
-            <TwitterIcon color="primary" fontSize="large" fab icon="google" />
+            <TwitterIcon color="primary" fontSize="large" />
           </a>
           <a href="" className="me-4 text-reset">
-            <InstagramIcon
-              sx={{ color: pink[400] }}
-              fontSize="large"
-              fab
-              icon="instagram"
-            />
+            <InstagramIcon sx={{ color: pink[400] }} fontSize="large" />
           </a>
         </div>
       </section>

@@ -1,4 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import {
+  rotateIn,
+  rotateOut,
+  rotateInDownLeft,
+  rotateInDownRight,
+  fadeInUp,
+} from "react-animations";
 
 export const DflexAll = styled.div`
   &.nav {
@@ -15,10 +22,35 @@ export const DflexAll = styled.div`
     display: flex;
   }
   &.user .icon-search {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   &.user .icon-search .icon-search-child {
     font-size: 30px;
+    color: black;
+  }
+  .icon-cart {
+    color: black;
+    position: relative;
+  }
+  .icon-cart .count {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    color: #fff;
+    font-size: 13px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-cart .count span {
+    background: #2871c6;
+
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
   }
   &.user .login {
     text-decoration: none;
@@ -42,22 +74,21 @@ export const DflexAll = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 40%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  animation: "rotateOut";
+  /* position: absolute; */
 `;
 
 export const Img2 = styled.img`
   width: 40%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+  /* position: absolute; */
 `;
 export const Logo = styled.div`
   &.logo {
-    width: 15%;
+    width: 6%;
     height: 100%;
     position: relative;
   }
@@ -83,12 +114,28 @@ export const ListMenu = styled.div`
     border-radius: 10px;
   }
 `;
+export const Fqa = styled.div`
+  margin-top: 70px;
+`;
 export const ItemMenu = styled.div``;
 export const LogoWow = styled.img`
   width: 100%;
   margin-bottom: 20px;
   transition: 1.2s;
-  animation: "zoomInDown";
-  animation-duration: 3s;
-  --animation-repeat: 2;
+`;
+const rotateInAnimation = keyframes`${rotateInDownLeft}`;
+const rotateOutAnimation = keyframes`${rotateInDownRight}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+
+export const RotateInDiv = styled.div`
+  animation: 1.5s ${rotateInAnimation};
+`;
+export const RotateOutDiv = styled.div`
+  animation: 1.5s ${rotateOutAnimation};
+`;
+export const FadeInUpDiv = styled.div`
+  animation: 4s ${fadeInUpAnimation};
+`;
+export const FadeInUpDiv2 = styled.div`
+  animation: 5s ${fadeInUpAnimation};
 `;
