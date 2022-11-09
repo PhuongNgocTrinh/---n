@@ -19,10 +19,11 @@ import BanerCarousel from "../component/BanerCarousel";
 import FullWidthTabs from "../component/TabPanel";
 import BlogBody from "../component/BlogBody";
 import TabPanel from "../component/TabPanel";
-import Test from "../component/Test";
+
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { SnackbarProvider } from "notistack";
+import Maketing from "../component/Maketing";
 const Home = () => {
   const { products } = useSelector((state) => state.products);
 
@@ -63,14 +64,25 @@ const Home = () => {
           <ItemMain products={products} />
         </SnackbarProvider>
       </div>
+      <div>
+        <Maketing />
+      </div>
+
       <Margincategory className="container">
         <TabPanel />
+        <div className="a-seeMore">
+          <Link
+            to="listItems"
+            className="a-child-seeMore"
+            style={{ marginBottom: "20px" }}
+          >
+            see more
+          </Link>
+        </div>
       </Margincategory>
       <div className="container">
         <BlogBody products={products} />
       </div>
-
-      <Test />
     </div>
   );
 };

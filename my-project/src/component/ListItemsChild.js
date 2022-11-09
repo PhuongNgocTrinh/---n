@@ -62,13 +62,20 @@ const ListItemsChild = (props) => {
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Button
+            className="btn-addCart-main"
             onClick={handleClickVariant("success", items, setaddedCart)}
             color="white"
             style={{ marginLeft: "2px" }}
             size="small"
             variant="contained"
           >
-            {addedCart ? <Link to="cart">view cart</Link> : "add to cart"}
+            {addedCart ? (
+              <Link class="a-addcart-main" to="cart">
+                view cart
+              </Link>
+            ) : (
+              "add to cart"
+            )}
           </Button>
         </ThemeProvider>
       </DivNone>

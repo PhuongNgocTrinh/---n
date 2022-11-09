@@ -226,6 +226,16 @@ export const AnimateTitle = styled.h1`
 export const Margincategory = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
+  .a-seeMore {
+    text-align: center;
+  }
+  .a-child-seeMore {
+    text-decoration: none;
+    border: 1px solid #000c;
+    padding: 4px;
+    border-radius: 6px;
+    color: #000c;
+  }
 `;
 
 //blogbody
@@ -260,6 +270,29 @@ export const PbsBanerInfo = styled.div`
   left: 5%;
   width: 50%;
   color: #fff;
+  .btn-addToCart:hover {
+    background: rgba(208, 225, 225, 40%);
+    display: flex;
+    align-items: center;
+  }
+  .btn-addToCart:hover .linkToCart {
+    border-bottom: 1px solid #fff;
+  }
+  .main-btn-infoGame {
+    display: flex;
+    flex-direction: column;
+  }
+  .addCart {
+    margin-top: 20px;
+  }
+  .a-addcart-main {
+    color: #000c;
+  }
+  .linkToCart {
+    text-decoration: none;
+    color: #fff;
+  }
+
   .row .col-6,
   h5 {
     color: #fff;
@@ -317,7 +350,6 @@ export const ImgHoverItem = styled.img`
 
   transition: 0.2s;
 `;
-export const name = styled.div``;
 
 //cart
 export const MainCart = styled.div`
@@ -365,9 +397,144 @@ export const MainCart = styled.div`
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
   }
+  .h1-nothing {
+    text-align: center;
+  }
+  .main-nothing {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 100px 0;
+  }
+  .price-cart {
+    margin-bottom: 20px;
+  }
+  .Calculated {
+    opacity: 70%;
+    font-size: 14px;
+  }
+  .MuiBox-root .css-1tfqlfq {
+    width: 100%;
+  }
+  .main-my-cart {
+    margin-bottom: 50px;
+  }
+  .count-item {
+    font-size: 18px;
+  }
 `;
 export const ImgCart = styled.img`
   width: 200px;
   margin-right: 20px;
   border-radius: 10px;
 `;
+
+export const CartItem = styled.div`
+  .name-cart {
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .name-cart:hover {
+    text-decoration: underline 1px;
+    color: rgb(245, 245, 245);
+  }
+  .img-cart {
+    opacity: 85%;
+    transition: 0.2s;
+  }
+  .img-cart:hover {
+    opacity: 100%;
+  }
+`;
+export const ChildCart1 = styled.div`
+  .remove-cart {
+    padding: 0px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: all;
+    position: relative;
+    border-radius: 1px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.6);
+    color: rgba(245, 245, 245, 0.6);
+    text-transform: none;
+  }
+  .remove-cart {
+  }
+  .remove-cart:hover {
+    color: rgb(245, 245, 245);
+    background: none;
+  }
+  .gameBaEdi {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(245, 245, 245);
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 4px;
+  }
+  .main-gameBaEdi {
+    transition: color 125ms ease-in-out 0s;
+    color: rgb(245, 245, 245);
+    font-size: 9px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .span-GE {
+    margin-right: 10px;
+  }
+  .main-Up-Dow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .span-icon-up {
+    margin-right: 10px;
+  }
+  .info-icon {
+    opacity: 80%;
+    font-size: 12px;
+  }
+  .p-Available {
+    font-size: 12px;
+    opacity: 60%;
+  }
+  .Self {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .icon-self {
+    margin-left: 10px;
+    background: none;
+    opacity: 60%;
+  }
+`;
+export const MainSelf = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  .child-self {
+    margin-top: 70px;
+  }
+  .title-self {
+    margin-bottom: 50px;
+  }
+`;
+export const name12 = styled.div``;

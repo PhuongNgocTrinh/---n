@@ -12,6 +12,9 @@
     {
       "category": "action",
       "_id": 1,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "ending ring",
       "imgItem": "/images/endingring.png",
       "price": 130,
@@ -74,6 +77,10 @@
     {
       "category": "Role-Playing",
       "_id": 2,
+
+      "mac": "fa-apple",
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "horizon",
       "imgItem": "/images/horizon.png",
       "price": 150,
@@ -169,6 +176,8 @@
     {
       "category": "action",
       "_id": 3,
+      "window": "fa-windows",
+      "edit": "EDITION",
       "name": "Stray",
       "imgItem": "/images/stray.png",
       "price": 70,
@@ -227,6 +236,9 @@
     {
       "category": "Role-Playing",
       "_id": 4,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Madden NFL 23",
       "imgItem": "/images/madden.png",
       "price": 90,
@@ -279,6 +291,8 @@
     {
       "category": "action",
       "_id": 5,
+      "window": "fa-windows",
+      "edit": "EDITION",
       "name": "UNCHARTED™: Legacy of Thieves Collection",
       "imgItem": "/images/uncharted.png",
       "price": 88,
@@ -339,6 +353,9 @@
     {
       "category": "Role-Playing",
       "_id": 6,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "The Last of Us™ Part I",
       "imgItem": "/images/thelastofus.png",
       "price": 47,
@@ -399,6 +416,10 @@
     {
       "category": "action",
       "_id": 7,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Dying Light 2 Stay Human",
       "imgItem": "/images/dying.png",
       "price": 85,
@@ -458,10 +479,13 @@
     {
       "category": "Role-Playing",
       "_id": 8,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "LEGO® Star Wars: The Skywalker Saga",
       "imgItem": "/images/legostarwars.png",
       "price": 125,
-      "year": 2011,
+      "year": "22/9/2021",
       "player": 2,
       "ps": "PS Camera optional",
       "imgFQA": "/imgInfoGame/FQAimageHorizon.png",
@@ -519,10 +543,13 @@
     {
       "category": "action",
       "_id": 9,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
       "name": "Ghostwire: Tokyo",
       "imgItem": "/images/ghostwire.png",
       "price": 54,
-      "year": 2016,
+      "year": "12/6/2021",
       "player": 1,
       "ps": "PS Camera optional",
       "imgFQA": "/imgInfoGame/FQAimageHorizon.png",
@@ -579,10 +606,13 @@
     {
       "category": "Role-Playing",
       "_id": 10,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Gran Turismo® 7",
       "imgItem": "/images/grand.png",
       "price": 24,
-      "year": 2014,
+      "year": "22/9/2022",
       "player": 1,
       "ps": "PS Camera optional",
       "imgFQA": "/imgInfoGame/FQAimageHorizon.png",
@@ -643,6 +673,9 @@
     {
       "category": "action",
       "_id": 11,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
       "name": "Saints Row",
       "imgItem": "/images/saintsrow.png",
       "price": 42,
@@ -714,6 +747,9 @@
     {
       "category": "Role-Playing",
       "_id": 12,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "DEATHLOOP",
       "imgItem": "/images/deathloop.png",
       "price": 25,
@@ -785,6 +821,9 @@
     {
       "category": "Simulation",
       "_id": 13,
+      "window": "fa-windows",
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Hogwarts Legacy",
       "imgItem": "/images/hogwarts.png",
       "price": 34,
@@ -857,6 +896,9 @@
     {
       "category": "Sports-Racing",
       "_id": 14,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "EA SPORTS™ FIFA 23",
       "imgItem": "/images/easports.png",
       "price": 45,
@@ -927,6 +969,9 @@
     {
       "category": "Simulation",
       "_id": 15,
+      "window": "fa-windows",
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "The Callisto Protocol",
       "imgItem": "/images/thecallisto.png",
       "price": 78,
@@ -997,6 +1042,9 @@
     {
       "category": "Sports-Racing",
       "_id": 16,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Skull and Bones",
       "imgItem": "/images/skull.png",
       "price": 65,
@@ -1066,6 +1114,9 @@
     {
       "category": "Simulation",
       "_id": 17,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
       "name": "Gotham Knights",
       "imgItem": "/images/gotham.png",
       "price": 89,
@@ -1137,10 +1188,13 @@
     {
       "category": "Sports-Racing",
       "_id": 18,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Forspoken",
       "imgItem": "/images/forspoken.png",
       "price": 70,
-      "year": 2022,
+      "year": "30/1/2021",
       "player": 2,
       "ps": "PS Camera optional",
       "imgFQA": "/imgInfoGame/FQAimageHorizon.png",
@@ -1206,6 +1260,9 @@
     {
       "category": "Simulation",
       "_id": 19,
+      "window": "fa-windows",
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Call of Duty®: Modern Warfare® 2",
       "imgItem": "/images/callofduty.png",
       "price": 60,
@@ -1276,6 +1333,9 @@
     {
       "category": "Sports-Racing",
       "_id": 20,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "God of War™ Ragnarök",
       "imgItem": "/images/godofwar.png",
       "price": 58,
@@ -1365,10 +1425,14 @@
     {
       "category": "Simulation",
       "_id": 21,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Suicide Squad: Kill the Justice League",
       "imgItem": "/images/suicide.png",
       "price": 55,
-      "year": "5/08/2020",
+      "year": "5/8/2020",
       "player": 1,
       "ps": "PS Camera optional",
       "imgFQA": "/imgInfoGame/FQAimageHorizon.png",
@@ -1423,6 +1487,9 @@
     {
       "category": "Sports-Racing",
       "_id": 22,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Resident Evil Village",
       "imgItem": "/images/resident.png",
       "price": 44,
@@ -1483,6 +1550,8 @@
     {
       "category": "Simulation",
       "_id": 23,
+      "window": "fa-windows",
+      "edit": "EDITION",
       "name": "Apex Legends™ PS5™ ",
       "imgItem": "/images/apex.png",
       "price": 40,
@@ -1543,6 +1612,9 @@
     {
       "category": "Sports-Racing",
       "_id": 24,
+
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "F1® Manager 2022",
       "imgItem": "/images/manager.png",
       "price": 50,
@@ -1603,6 +1675,9 @@
     {
       "category": "Sports-Racing",
       "_id": 25,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
       "name": "Soul Hackers 2",
       "imgItem": "/images/soul.png",
       "price": 70,
@@ -1661,6 +1736,9 @@
     {
       "category": "Strategy",
       "_id": 26,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Genshin Impact",
       "imgItem": "/images/genshin.png",
       "price": 102,
@@ -1720,6 +1798,10 @@
     {
       "category": "Adventure",
       "_id": 27,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Tiny Tina's Wonderlands",
       "imgItem": "/images/tinytitna.png",
       "price": 90,
@@ -1779,6 +1861,9 @@
     {
       "category": "Strategy",
       "_id": 28,
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "base": "BASE GAME",
       "name": "Cyberpunk 2077",
       "imgItem": "/images/cyber.png",
       "price": 80,
@@ -1837,6 +1922,9 @@
     {
       "category": "Strategy",
       "_id": 29,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
       "name": "Inscryption",
       "imgItem": "/images/inscry.png",
       "price": 150,
@@ -1896,6 +1984,7 @@
     {
       "category": "Adventure",
       "_id": 40,
+      "base": "BASE GAME",
       "name": "Far Cry 6",
       "imgItem": "/images/farcry.png",
       "price": 50,
@@ -1955,6 +2044,11 @@
     {
       "category": "Strategy",
       "_id": 31,
+
+      "window": "fa-windows",
+      "mac": "fa-apple",
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "OlliOlli World",
       "imgItem": "/images/oli.png",
       "price": 20,
@@ -2014,6 +2108,9 @@
     {
       "category": "Adventure",
       "_id": 32,
+      "base": "BASE GAME",
+      "window": "fa-windows",
+      "mac": "fa-apple",
       "name": "Tom Clancy's Rainbow Six Siege",
       "imgItem": "/images/tom.png",
       "price": 10,
@@ -2072,6 +2169,10 @@
     {
       "category": "Strategy",
       "_id": 33,
+      "window": "fa-windows",
+
+      "edit": "EDITION",
+      "base": "BASE GAME",
       "name": "Sifu",
       "imgItem": "/images/sifu.png",
       "price": 50,
@@ -2132,6 +2233,7 @@
     {
       "category": "Strategy",
       "_id": 34,
+      "base": "BASE GAME",
       "name": "Destiny 2",
       "imgItem": "/images/destiny.png",
       "price": 50,
@@ -2198,6 +2300,7 @@
   ],
   "hotgame": {
     "_id": 20,
+    "base": "BASE GAME",
     "name": "Horizon Forbidden West™",
     "title": "Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go, available 9th November on PS4 & PS5",
     "imgItem": "./images/hotgame.png",

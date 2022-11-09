@@ -20,8 +20,17 @@ import { CSSTransitionGroup } from "react-transition-group";
 import FQAgame from "./FQAgame";
 import TabInfo from "./TabInfo";
 import Para from "./\bPara";
-
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { addToCart } from "../../redux/slice/cartSlice";
+import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 const InfoGame = () => {
+  const [addedCart, setAddedCart] = useState(false);
+  const [addedCartIcon, setAddedCartIcon] = useState(
+    <ControlPointIcon sx={{ fontSize: 18 }} />
+  );
+
   const params = useParams();
   const dispatch = useDispatch();
   useEffect(() => {
@@ -72,11 +81,43 @@ const InfoGame = () => {
                 </div>
                 <div>
                   <p className="year-game">{itemForId.year}</p>
-                  <DflexAll className="user">
-                    <Link className="login">
-                      <div>Find out more</div>
-                    </Link>
-                  </DflexAll>
+                  <div className="main-btn-infoGame">
+                    <DflexAll className="user">
+                      <Link className="login">
+                        <div>Find out more</div>
+                      </Link>
+                    </DflexAll>
+                    <div className="addCart">
+                      <Stack direction="row" spacing={6}>
+                        <Button
+                          onClick={() => {
+                            dispatch(addToCart(itemForId));
+                            setAddedCart(true);
+                            setAddedCartIcon(
+                              <CheckCircleOutlineIcon sx={{ fontSize: 18 }} />
+                            );
+                          }}
+                          className="btn-addToCart"
+                          sx={{ color: "#fff", fontSize: 14 }}
+                        >
+                          <div style={{ marginBottom: "2px" }}>
+                            {addedCartIcon}
+                          </div>
+
+                          <div style={{ marginLeft: "10px" }}>
+                            {" "}
+                            {addedCart ? (
+                              <Link className="linkToCart" to="cart">
+                                view cart
+                              </Link>
+                            ) : (
+                              "add to cart"
+                            )}
+                          </div>
+                        </Button>
+                      </Stack>
+                    </div>
+                  </div>
                   <div className="onlinePlayer">
                     <CSSTransitionGroup>
                       <AnimatePlay className="fadeIn">

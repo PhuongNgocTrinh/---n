@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getItemsCart } from "../redux/slice/producSlice";
 
 import ListItemsChild from "./ListItemsChild";
+import { Link } from "react-router-dom";
 const ItemMain = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -60,6 +61,7 @@ const ItemMain = () => {
       <div className="container">
         <h5>New releases</h5>
         <p>Great PS5 and PS4 games available now</p>
+
         <Slider className="slider" {...settings}>
           {itemsCart &&
             itemsCart.items.map((items, index) => {

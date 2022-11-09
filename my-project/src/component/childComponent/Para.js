@@ -58,9 +58,6 @@ const Para = () => {
             <p>NVIDIA® GeForce GTX 970 / ATI Radeon R9 series</p>
           </div>
 
-          <br />
-          <br />
-          <br />
           <div style={{ marginBottom: "40px" }}>
             <h6>Storage</h6>
             <p>6</p>
