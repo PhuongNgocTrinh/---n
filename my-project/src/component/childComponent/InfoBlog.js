@@ -17,10 +17,16 @@ const InfoBlog = () => {
     <>
       {blogsId.map((itemForId, index) => {
         return (
-          <div key={index}>
-            <img src={itemForId.img} alt={index} />
-            <h1>{itemForId.title}</h1>
-            <h4>{itemForId.text}</h4>
+          <div style={{ marginTop: "70px" }} className="container" key={index}>
+            <div style={{ display: "flex" }}>
+              {" "}
+              <img style={{ width: "60%" }} src={itemForId.img} alt={index} />
+              <div>
+                {" "}
+                <h1>{itemForId.title}</h1>
+                <p>{itemForId.text}</p>
+              </div>
+            </div>
           </div>
         );
       })}

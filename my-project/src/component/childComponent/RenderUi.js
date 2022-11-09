@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Img, Pcategory } from "../../css/cssHome";
+import { Img, Pcategory,ImgTab } from "../../css/cssHome";
 const RenderUi = (props) => {
   const { item } = props;
   return (

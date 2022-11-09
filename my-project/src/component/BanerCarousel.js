@@ -12,7 +12,7 @@ import {
   TitleBanner,
   Carousel,
 } from "../css/cssHome";
-import { LogoWow } from "../css/cssComponent";
+import { LogoWow, FadeInUpDiv } from "../css/cssComponent";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,14 +43,14 @@ export default function BanerCarousel({ products }) {
   return (
     <Carousel>
       <Slider {...settings}>
-        {products.imgBaner.map((item, index) => {
+        {products?.imgBaner?.map((item, index) => {
           return (
             <Prv key={index}>
               <SliderCrs className="img-child" src={baseUrl + item.img} />
               <TitleBanner className="title-text">
-                <CSSTransitionGroup>
+                <FadeInUpDiv>
                   <LogoWow className="animate__repeat-2" src={item.textImg} />
-                </CSSTransitionGroup>
+                </FadeInUpDiv>
 
                 <TitleOfBanner data={item} />
               </TitleBanner>

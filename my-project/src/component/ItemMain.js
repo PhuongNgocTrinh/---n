@@ -1,15 +1,22 @@
-import { BodyItem, Img, ItemsPadding, ImgHoverItem } from "../css/cssHome";
-import React from "react";
-import { Link } from "react-router-dom";
-
+import { BodyItem } from "../css/cssHome";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
-// import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../AppCss/CssForSlick.css";
-const ItemMain = (props) => {
-  const { products } = props;
+import { useSelector, useDispatch } from "react-redux";
+import { getItemsCart } from "../redux/slice/producSlice";
+
+import ListItemsChild from "./ListItemsChild";
+import { Link } from "react-router-dom";
+const ItemMain = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getItemsCart());
+  }, []);
+  const { itemsCart } = useSelector((state) => state.products);
+
   const settings = {
     className: "center",
     rows: 2,
@@ -50,21 +57,20 @@ const ItemMain = (props) => {
     ],
   };
   return (
-    <BodyItem className="321">
+    <BodyItem className="main-items">
       <div className="container">
         <h5>New releases</h5>
         <p>Great PS5 and PS4 games available now</p>
+
         <Slider className="slider" {...settings}>
-          {products.items.map((items, index) => {
-            return (
-              <Link key={index} to={`infoGame/${items._id}`}>
-                <ItemsPadding>
-                  <ImgHoverItem src={items.imgItem} />
-                  <p>{items.name}</p>
-                </ItemsPadding>
-              </Link>
-            );
-          })}
+          {itemsCart &&
+            itemsCart.items.map((items, index) => {
+              return (
+                <div key={index} className="main-card">
+                  <ListItemsChild items={items} />
+                </div>
+              );
+            })}
         </Slider>
       </div>
     </BodyItem>
